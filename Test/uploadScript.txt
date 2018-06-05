@@ -1,0 +1,31 @@
+[Header]
+DebugStrings=on
+AbortOnError=on
+ConcurrentSectionLimit=100
+GlobalReportFile=|$scriptpath||$scriptfilename|-Report Log |$date| |$time|.log
+GlobalReportFileIncludeAll=off
+[Variables]
+//Predefined: $time $date $scriptfilename $scriptpath $scriptsection
+controller= auto Hostname
+[upload program]
+Connect= controller
+Program10.ProgramStop
+Program10.ProgramSend |$scriptpath|\bin\Debug\Test.cpz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
